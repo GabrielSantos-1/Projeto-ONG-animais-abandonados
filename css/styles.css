@@ -1,0 +1,122 @@
+:root{
+  --max-width:1100px;
+  --gap:1rem;
+  --accent:#0b6;
+  --text:#222;
+}
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  line-height:1.4;
+  margin:0;
+  padding:0;
+  background:#f7f7f7;
+}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.main-nav ul{list-style:none;padding:0;margin:0;display:flex;gap:0.75rem;}
+.main-nav a{text-decoration:none;color:var(--text);padding:0.35rem 0.6rem;border-radius:6px;}
+.main-nav a:hover, .main-nav a:focus{background:rgba(0,0,0,0.05);outline:none}
+
+.hero{background:#fff;padding:1.25rem;border-radius:8px;margin-bottom:1rem}
+.hero img{max-width:100%;height:auto;border-radius:6px;margin-top:0.75rem}
+
+.projects-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.project-card{background:#fff;padding:1rem;border-radius:8px}
+
+form{background:#fff;padding:1rem;border-radius:8px;display:grid;gap:0.6rem}
+label{font-weight:600;font-size:0.95rem}
+input,textarea,select{padding:0.6rem;border-radius:6px;border:1px solid #ddd;font-size:1rem}
+button{background:var(--accent);color:#fff;border:none;padding:0.6rem 1rem;border-radius:8px;cursor:pointer}
+button:hover{filter:brightness(.95)}
+
+.site-footer{margin-top:1.5rem;padding:1rem 0;text-align:center;color:#666;font-size:0.9rem}
+
+
+@media(min-width:700px){
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .header-inner{padding:0.5rem 0}
+}
+.sobre-container,
+.missao-visao-valores,
+.contato-sobre {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.sobre-container h1 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.missao-visao-valores h2,
+.contato-sobre h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.sobre-container p,
+.missao-visao-valores p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.missao-visao-valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.missao-visao-valores li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.2rem;
+}
+
+.contato-sobre {
+  text-align: center;
+}
+
+.contato-sobre a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contato-sobre a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .sobre-container,
+  .missao-visao-valores,
+  .contato-sobre {
+    padding: 1.2rem;
+  }
+  .sobre-container h1 {
+    font-size: 1.5rem;
+  }
+}
+header {
+  display: flex;       
+  align-items: center; 
+  gap: 20px;           
+  padding: 10px 20px;  
+}
+
+header img {
+  height: 80px;        
+}
+
+header nav a {
+  margin: 0 10px;      
+  text-decoration: none;
+  color: #000;
+}
+
