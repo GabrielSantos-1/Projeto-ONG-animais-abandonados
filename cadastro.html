@@ -36,7 +36,7 @@
   <h1>Cadastro de Voluntário</h1>
   <p>Preencha os dados abaixo. Campos com * são obrigatórios.</p>
 
-  <form id="cadastroForm" action="#" method="post" novalidate class="form">
+  <form id="cadastroForm" action="#" method="post" novalidate>
     <fieldset>
       <legend>Dados pessoais</legend>
 
@@ -46,13 +46,22 @@
       <label for="email">E-mail *</label>
       <input id="email" name="email" type="email" required>
 
-      <label for="cpf">CPF *</label>
-      <input id="cpf" name="cpf" type="text" inputmode="numeric" required
-             pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+      <!-- CPF + Telefone na mesma linha no desktop -->
+      <div class="linha-dupla">
+        <div>
+          <label for="cpf">CPF *</label>
+          <input id="cpf" name="cpf" type="text" inputmode="numeric" 
+                 required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                 placeholder="000.000.000-00">
+        </div>
 
-      <label for="tel">Telefone *</label>
-      <input id="tel" name="tel" type="tel" inputmode="tel" required
-             pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" placeholder="(11) 99999-9999">
+        <div>
+          <label for="tel">Telefone *</label>
+          <input id="tel" name="tel" type="tel" inputmode="tel" 
+                 required pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" 
+                 placeholder="(11) 99999-9999">
+        </div>
+      </div>
 
       <label for="nasc">Data de nascimento *</label>
       <input id="nasc" name="nasc" type="date" required max="2007-12-31">
@@ -62,7 +71,8 @@
       <legend>Endereço</legend>
 
       <label for="cep">CEP *</label>
-      <input id="cep" name="cep" type="text" inputmode="numeric" required pattern="\d{5}-?\d{3}" placeholder="00000-000">
+      <input id="cep" name="cep" type="text" inputmode="numeric" 
+             required pattern="\d{5}-?\d{3}" placeholder="00000-000">
 
       <label for="rua">Endereço *</label>
       <input id="rua" name="rua" type="text" required>
@@ -82,7 +92,7 @@
     <fieldset>
       <legend>Preferências</legend>
       <label for="areas">Áreas de interesse</label>
-      <select id="areas" name="areas" multiple size="4" aria-describedby="areas-help">
+      <select id="areas" name="areas" multiple size="4">
         <option value="educacao">Educação</option>
         <option value="saude">Saúde</option>
         <option value="alimentacao">Alimentação</option>
@@ -94,6 +104,7 @@
     <button type="submit" class="btn">Enviar cadastro</button>
   </form>
 </main>
+
 
 <footer class="site-footer">
   <div class="container">
