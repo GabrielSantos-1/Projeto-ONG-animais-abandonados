@@ -1,78 +1,83 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Projetos — ONG Anjos De Patas</title>
-  <meta name="description" content="Conheça os projetos da ONG Anjos De Patas. Voluntariado e formas de doação." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Conheça os projetos da ONG Anjos De Patas. Voluntariado e formas de doação.">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo"><img src="images/dogs.png" alt="Logo ONG Anjos De Patas" width="" /></a>
-      <nav class="main-nav" aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Página inicial - ONG Anjos de Patas">
+      <img src="images/dogs.png" alt="Logo da ONG Anjos de Patas">
+    </a>
+    <div class="header-actions">
+      <button class="contrast-toggle" aria-pressed="false" aria-label="Alternar modo escuro/alto contraste">🌓</button>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamb" aria-hidden="true"></span>
+      </button>
     </div>
-  </header>
+    <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html" class="active">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main class="container" role="main">
-    <h1>Projetos Sociais</h1>
-    <p>Conheça nossos projetos, como participar como voluntário e como contribuir financeiramente.</p>
+<main id="main" class="container" role="main">
+  <h1>Projetos Sociais</h1>
+  <p>Conheça nossos projetos, como participar como voluntário e como contribuir financeiramente.</p>
 
-    <section aria-labelledby="lista-projetos" class="projects-grid">
-      <h2 id="lista-projetos">Nossos projetos</h2>
+  <section aria-labelledby="lista-projetos" class="projects-grid grid-12">
+    <h2 id="lista-projetos" class="col-12">Nossos projetos</h2>
 
-      <article class="project-card" aria-labelledby="proj1">
-        <h3 id="proj1">Projeto Educação</h3>
-        <img src="images/sala de aula.png" alt="Crianças em sala de aula" width="600"
-             srcset="images/sala de aula.png 800w, images/sala de aula-400.png 400w"
-             sizes="(max-width:600px) 100vw, 600px" />
-        <p>Oferecemos reforço escolar para crianças e adolescentes.</p>
-        <p><strong>Impacto:</strong> 500 alunos atendidos em 2024.</p>
-        <a href="#voluntariado-Projeto Educação">Quero ser voluntário</a> |
-        <a href="#doar-Projeto Educação">Doar para este projeto</a>
-      </article>
+    <article class="project-card col-12 col-sm-6">
+      <h3>Projeto Educação</h3>
+      <img src="images/sala de aula.png" alt="Crianças em sala de aula">
+      <p>Oferecemos reforço escolar para crianças e adolescentes.</p>
+      <p><strong>Impacto:</strong> 500 alunos atendidos em 2024.</p>
+      <div class="tags">
+        <span class="badge badge-info">Educação</span>
+        <span class="badge badge-neutral">Crianças</span>
+      </div>
+      <div class="actions">
+        <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+        <a href="mailto:doacoes@anjosdepatas.org?subject=Doação%20Projeto%20Educação" class="btn outline">Doar</a>
+      </div>
+    </article>
 
-      <article class="project-card" aria-labelledby="proj2">
-        <h3 id="proj2">Projeto Saúde</h3>
-        <img src="images/unidademoveldesaude.png" alt="Atendimento de saúde comunitária" />
-        <p>Clínica móvel com atendimentos básicos e campanhas de vacinação.</p>
-        <a href="#voluntariado-Projeto Saúde">Quero ser voluntário</a> |
-        <a href="#doar-Projeto Saúde">Doar para este projeto</a>
-      </article>
-    </section>
+    <article class="project-card col-12 col-sm-6">
+      <h3>Projeto Saúde</h3>
+      <img src="images/unidademoveldesaude.png" alt="Atendimento de saúde comunitária">
+      <p>Clínica móvel com atendimentos básicos e campanhas de vacinação.</p>
+      <div class="tags">
+        <span class="badge badge-success">Saúde</span>
+        <span class="badge badge-neutral">Comunidade</span>
+      </div>
+      <div class="actions">
+        <a href="cadastro.html" class="btn">Quero ser voluntário</a>
+        <a href="mailto:doacoes@anjosdepatas.org?subject=Doação%20Projeto%20Saúde" class="btn outline">Doar</a>
+      </div>
+    </article>
+  </section>
+</main>
 
-    <section id="voluntariado-projeto1" class="volunteer-info" aria-labelledby="vol-title">
-      <h2 id="vol-title">Como se voluntariar</h2>
-      <ol>
-        <li>Consulte as vagas disponíveis.</li>
-        <li>Preencha o formulário de inscrição (página de cadastro).</li>
-        <li>Aguarde a triagem e confirmação por e-mail.</li>
-      </ol>
-    </section>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="ano3"></span> ONG Anjos de Patas. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
-    <section id="doar-projeto1" aria-labelledby="donate-title" class="donation-info">
-      <h2 id="donate-title">Como doar</h2>
-      <p>Oferecemos doações por PIX, cartão ou boleto. Para doações recorrentes, entre em contato.</p>
-      <a href="mailto:doacoes@ongexemplo.org">Solicitar detalhes para doações</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="ano2"></span> ONG Exemplo.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('ano2').textContent = new Date().getFullYear();
-  </script>
+<script src="css/js/masks.min.js"></script>
+<script type="module" src="css/js/main.min.js"></script>
+<script>document.getElementById('ano3').textContent = new Date().getFullYear();</script>
 </body>
 </html>
