@@ -107,12 +107,13 @@ img{max-width:100%; display:block}
 .projects-grid,
 .contact {
   max-width: 1100px;
-  margin: 0 auto 3rem auto; /* centralizado + espaçamento final */
+  margin: 0 auto 3rem auto;
   padding: 2rem;
-  background: #fff;
+  background: var(--bg); /* usa --bg para seções principais */
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: var(--shadow);
 }
+
 
 /* Espaçamento extra para garantir respiro */
 .about { margin-bottom: 3rem; }
