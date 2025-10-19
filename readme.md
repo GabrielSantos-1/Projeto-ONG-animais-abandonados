@@ -39,4 +39,4 @@ O projeto tem como propósito aplicar práticas de **desenvolvimento web respons
 ## ⚙️ Como Rodar Localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/GabrielSantos-1/ong-anjos-de-patas.git
+   git clone https://github.com/GabrielSantos-1/Projeto-ONG-animais-abandonados
